@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink & Thread Studio | Portfolio</title>
+    <meta name="description" content="View past work from Ink & Thread Studio, including T-shirts, artwork, event and business merchandise.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Site header: logo and main navigation, identical across every page -->
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+    <a href="index.html">
+        <img src="images/logo4.png" alt="Ink & Thread Studio">
+    </a>
+</div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About the Studio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="request-design.html">Request a Design</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+        <!-- Page title and short introductory description for this page -->
+        <section class="page-heading">
+            <h1>Portfolio</h1>
+            <p>A look at some of our past custom work.</p>
+        </section>
+
+        <!-- Category filter buttons. Each data-filter value matches a data-category on a portfolio item.
+             js/portfolio.js shows the matching items when a button is clicked. -->
+        <section class="portfolio-filters">
+            <ul>
+                <li><button type="button" data-filter="all" class="active" aria-pressed="true">All</button></li>
+                <li><button type="button" data-filter="t-shirts" aria-pressed="false">T-Shirts</button></li>
+                <li><button type="button" data-filter="artwork" aria-pressed="false">Artwork</button></li>
+                <li><button type="button" data-filter="events" aria-pressed="false">Events</button></li>
+                <li><button type="button" data-filter="business" aria-pressed="false">Business</button></li>
+            </ul>
+        </section>
+
+        <!-- Grid of past custom design work, grouped by category via data-category attributes.
+             Each image sits inside a button so keyboard users can open it. js/lightbox.js opens the larger view. -->
+        <section class="portfolio-gallery">
+            <article class="portfolio-item" data-category="t-shirts">
+                <button type="button" class="lightbox-trigger">
+                    <img src="images/custom-made-tshirt.jpg" alt="Custom printed T-shirt design">
+                </button>
+                <h3>Custom T-Shirt Design</h3>
+            </article>
+
+            <article class="portfolio-item" data-category="artwork">
+                <button type="button" class="lightbox-trigger">
+                    <img src="images/personalised-artwork-print.jpg" alt="Personalised artwork print">
+                </button>
+                <h3>Personalised Artwork</h3>
+            </article>
+
+            <article class="portfolio-item" data-category="events">
+                <button type="button" class="lightbox-trigger">
+                    <img src="images/event-business-merch.jpg" alt="Event merchandise example">
+                </button>
+                <h3>Event Merchandise</h3>
+            </article>
+
+            <article class="portfolio-item" data-category="business">
+                <button type="button" class="lightbox-trigger">
+                    <img src="images/branded-business-merch.jpg" alt="Branded business merchandise">
+                </button>
+                <h3>Business Merchandise</h3>
+            </article>
+        </section>
+    </main>
+
+    <!-- Site footer: copyright and quick links -->
+    <footer>
+        <p>&copy; 2026 Ink & Thread Studio. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="portfolio.html">Our Work</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
